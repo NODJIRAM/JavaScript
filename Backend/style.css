@@ -1,0 +1,486 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* barre de mode éditer */
+
+#baniere{
+	display: none;
+}
+#mode_editer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 4rem;
+	width: 100%;
+	font-size: 18px;
+	gap: 4rem;
+	background-color: #141817;
+	color: white;
+}
+#mode_editer i{
+	margin-right: -57px;
+	margin-top: -5px;
+	font-size: 25px;
+}
+#publier_les_changements{
+	display: flex;
+	justify-content: center;
+	border-radius: 25px;
+	background-color: white;
+	height: 45%;
+	width: 23%;
+	padding-top: 12px;
+	color: black;
+}
+/* fin de la barre de mode éditer */
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** end reset css**/
+body {
+	max-width: 1140px;
+	margin:auto;
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+section {
+	margin: 50px 0
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+li:hover {
+	color: #B1663C;
+}
+a {
+    text-decoration: none;
+}
+
+/* css partie de l'image de sophie et bouton modier en dessous */
+
+#introduction {
+	display: flex;
+	align-items: center;
+}
+#introduction figure {
+	flex: 1;
+	font-size: 22px;
+}
+#introduction figure i{
+	margin-top: -5px;
+	margin-right: 0.5rem;
+	font-size: 25px;
+	margin-left: 2rem;
+}
+#introduction figcaption{
+	margin-left: 2rem;
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: 0.5fr 8fr;
+}
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+	margin-bottom: 0.7rem;
+}
+#introduction article {
+	flex: 1;
+}
+#introduction h2 {
+	margin-bottom: 1em;
+}
+#introduction p {
+	margin-bottom: 0.5em;
+}
+
+/* fin de la partie */
+
+
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+#portfolio figcaption {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery img {
+	width: 100%;
+
+}
+/* section figure {
+	position: relative;
+}
+.fa-trash-can{
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	/* margin-bottom: -75px; */
+} */
+#contact {
+	width: 50%;
+	margin: auto;
+}
+#contact > * {
+	text-align: center;
+
+}
+#contact h2{
+	margin-bottom: 20px;
+}
+#contact form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label {
+	margin: 2em 0 1em 0;
+}
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em
+}
+
+/* ajout de css pour la navbar */
+
+#navbar{
+	display: flex;
+	justify-content: center;
+	font-size: 17px;
+}
+.bar_tous, .bar_objets, .bar_hotel, .bar_appartement {
+	text-align: center;
+	border-radius: 20px;
+	border: solid 1px #13463c;
+	width: 25%;
+	height: 1.5rem;
+	margin: 2rem;
+	padding-top: 0.5rem;
+}
+.bar_appartement:hover, .bar_hotel:hover, .bar_objets:hover, .bar_tous:hover {
+	background-color: #13463c;
+	color: white;
+	font-weight: bold;
+}
+
+/* fin de la navbar */
+
+.hidden{
+	display: grid;
+	grid-template-columns: 0.5fr 12fr;
+	/* display: none; */
+}
+
+.aligne_projet{
+	justify-content: center;
+}
+
+/* css pour modal */
+#ajouter{
+	text-align: center;
+	justify-content: center;
+}
+#ajouter input{
+	height: 3rem;
+}
+aside h2{
+	color: black;
+}
+aside a{
+	color: red;
+}
+
+
+.modal{
+	position: fixed;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+.modal-content{
+	position: absolute;
+	overflow: auto;
+	width: 35%;
+	height: 80%;
+	top: 10%;
+	left: 30%;
+	/* max-width: calc(100vw - 20px);
+	max-height: calc(100vh - 20px); */
+	padding: 20px;
+	background-color: #fff;
+
+}
+.modal-content nav {
+	color: black;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 3rem;
+}
+.modal-content .suprimer{
+	display: flex;
+	justify-content: center;
+	color: red;
+}
+
+.content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 1rem;
+	padding: 1rem;
+}
+.content img{
+	width: 100%;
+	
+}
+/* partie css de lien pour acceder et modifier */
+#content-click-modal{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	gap: 2rem;
+}
+#content-click-modal .modifier{
+	font-size: 20px;
+}
+#content-click-modal .modifier i{
+	margin-right: 0.5rem;
+	font-size: 25px;
+}
+/* fin de la partie */
+
+/* modal ajout photo */
+#myAjout {
+	width: 50%;
+	margin: auto;
+	/* display: none; */
+	background-color: #fff;
+}
+#myAjout > * {
+	text-align: center;
+}
+#myAjout h2{
+	margin-bottom: 20px;
+}
+#myAjout form {
+	margin-top:30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#myAjout input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#myAjout label {
+	margin: 2em 0 1em 0;
+}
+#myAjout textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#myAjout label{
+	flex-direction: row;
+}
+
+#pet-select{
+	height: 50px;
+	font-size: 1.2em;
+	font-family: "Syne";
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+.ajout-content{
+	position: absolute;
+	overflow: auto;
+	width: 40%;
+	height: 80%;
+	top: 10%;
+	left: 30%;
+	padding: 20px;
+	background-color: #fff;
+}
+.ajout-content nav{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.5rem;
+}
+.ajout-content form{
+	margin: 15%;
+}
+.ajout-content form .suprimer{
+	color: red;
+}
+.ajout-content form label{
+	display: flex;
+	text-justify: initial;
+}
+.ajout-content h2{
+	margin-top: 2rem;
+}
+.ajout-content nav span {
+	font-size: 2rem;
+	color: black;
+}
+
+/* partie ajout image  dans la modal ajouter une photo */
+#fon_ajout{
+	display: block;
+	width: 70%;
+	height: 210px;
+	background-color: #cce6e1;
+	margin-left: 7.5rem;
+	/* padding: 0; */
+}
+#fon_ajout #inserer{
+	cursor: pointer;
+	border-radius: 25px;
+	font-family: "Syne";
+	background-color: #8cb9b0;
+	padding: 10px;
+}
+#fon_ajout img{
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 25px;
+	margin-top: 1rem;
+	margin-bottom: 1.8rem;
+	background-color: rgb(184, 155, 155);
+}
+#fon_ajout p {
+	margin-top: 1.2rem;
+}
+#ligne-ajout{
+	margin-top: 6rem;
+	border-top: 3px solid #494343;
+	width : 570px;
+}
+
+/* partie de la selection de photos */
+/* #myFileInput{
+	text-align: center;
+	border-radius: 25px;
+	
+} */

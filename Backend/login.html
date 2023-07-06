@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/ae77a9910e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Backend/login.css">
+    <script type="module" defer src="./login.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Sophie Bluel</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sophie Bluel<span>Architecte d'inteérieur</span></h1>
+        <nav>
+            <ul>
+                <li>projets</li>
+                <li>contact</li>
+                <li>login</li>
+                <li><img src="../FrontEnd/assets/icons/instagram.png" alt="Instagram"></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact">
+        <h2 id="log">Log in</h2>
+        <form id="flog" action="#" method="post">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="veuillez entrer votre mail">
+            <p id="no_result_1">Mauvais mail, ressayez svp</p>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="name" placeholder="veuillez entrer votre mot de passe">
+            <p id="no_result_2">Mauvais mot de passe, ressayez svp</p>
+            <div id="connecter">
+                <input type="submit" value="Se connecter">
+            </div>
+        </form>
+        <div id="oublie">
+            <a href="#">
+                <p>Mot de passe oublié</p>
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
